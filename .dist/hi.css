@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+:root{
+    --ff-primary:'Source Sans Pro',sans-serif;
+    --ff-secondary:'Soucrce Code Pro' ,monospace;
+    --fw-reg:300;
+    --fw-bold:900;
+    --clr-light:#fff;
+    --clr-dark:#303030;
+    --clr-accent:#16e0bd;
+
+    --fs-h1:3rem;
+    --fs-h2:2.25rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+
+
+}
+@media (min-width: 800px){
+    :root{
+        --fs-h1:4.5rem;
+        --fs-h2:3.75rem;
+        --fs-h3:1.5rem;
+        --fs-body:1.125rem;
+    }   
+}
+body{
+    background: #757575;
+    color:var(--clr-light);
+    margin:0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+
+}
+section{
+    padding: 5cm 2cm;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1,h2,h3{
+    line-height: 1.1;
+    margin: 0;
+}
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+nav{ display: none;}
+.intro{
+    position: relative;
+}
+
+.hi2{
+    width:1000px;
+    height:800px;
+    background:red;
+    padding-left:50px;
+    font-size:30px;
+    margin-top:50px;
+    margin-left:20px;
+    margin:50px 0 0 50px;
+}
+.box{
+    width:100px;
+    height:100px;
+
+}
+.section_title{
+    margin-bottom: .25em;
+}
+.section_title_intro{
+    font-weight: var(--fw-reg);
+}
+.section_title_mywork{
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+}
+@media(min-width: 600px)
+{
+    .intro{
+        display:grid;
+        grid-column-gap: 1em;
+        grid-template-columns: min-content max-content;
+
+    }
+ .intro_img{
+     grid-area: img;
+     min-width: 250px;
+ }
+}
+.workspace{
+    background-color: var(--clr-dark);
+    color: antiquewhite;
+    text-align: center;
+}
+.section_title_mywork{
+    color:var(--clr-light);
+    position: relative;
+}
+.footer{
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+.footer a{color:inherit}
+.social-link_list:hover{
+    opacity: .7;
+}
+.footer_link:hover{
+    text-decoration: underline;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'P
+    oppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg1.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #fd4766;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
